@@ -1,5 +1,5 @@
 
- const drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'bobby']
+const drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'bobby']
 
 
 
@@ -16,10 +16,12 @@ function findMatching(array, passedInString) {
 
 // fuzzyMatch - This function takes an array of drivers' names and a string as arguments for querying the array, and returns all drivers whose names begin with the provided letters.
 
-let newDriver = []
+function fuzzyMatch(array, stringMatch) {
+    return array.filter(element => element.startsWith(stringMatch))
+}
 
-function fuzzyMatch(array, string) {
-    newDriver = array.filter( driver => driver == string)
-    return newDriver.push()
+
+function matchName (array, string) {
+    return array.filter(el => el.name == string )
 
 }
